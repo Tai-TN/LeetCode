@@ -1,0 +1,2 @@
+- Cửa sổ trượt cố định : Kích thước cửa sổ cố định
+- CỬa sổ trượt động : 
