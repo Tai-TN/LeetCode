@@ -1,2 +1,10 @@
 - Cửa sổ trượt cố định : Kích thước cửa sổ cố định
 - CỬa sổ trượt động : 
+
++Permutation in String
+-Maximum Sum of distinct Subarrays With Length K
+-Substring with Concatenation of All Words
+-Longest Substring Without Repeating Characters
+-Longest Repeating Character Replacement
+-Minimum Size Subarray Sum
+-Max Consecutive Ones III
