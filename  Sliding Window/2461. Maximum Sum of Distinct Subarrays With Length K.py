@@ -36,4 +36,33 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        max_sum = 0
+        left = 0
+        current_sum = 0
+        set_number = {}
+        for i in range(0, k):
+            current_sum += nums[i]
+            set_number[nums[i]] = set_number.get(nums[i], 0) + 1
         
+        if len(set_number) == k:
+            max_sum = max(max_sum, current_sum)
+            
+        for i in range(k, len(nums)):
+            set_number[nums[left]] -= 1
+            if (set_number[nums[left]]) == 0 :
+                del set_number[nums[left]]
+            current_sum -= nums[left]
+            left += 1
+            current_sum += nums[i]
+            set_number[nums[i]] = set_number.get(nums[i], 0) + 1
+            if len(set_number) == k:
+                max_sum = max(max_sum, current_sum)
+            
+        return max_sum
+    
+S = Solution()
+nums = [1,5,4,2,9,9,9]
+k = 3
+print(S.maximumSubarraySum(nums, k))
+            
+            
